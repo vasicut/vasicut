@@ -6,7 +6,7 @@ I enjoy building full-stack web applications using PHP, MySQL, JavaScript, HTML,
 - 🔭 Currently working on personal projects and freelance web development  
 - 🌱 Continuously learning new web technologies and best practices  
 - 💬 Ask me about PHP, JavaScript, MySQL, or web development in general  
-- 📫 You can reach me at [vasi.sorin_nistor@yahoo.com]
+- 📫 You can reach me at [vasi.sorin_nistor@yahoo.com](mailto:vasi.sorin_nistor@yahoo.com)  
 - ⚡ Fun fact: I love solving coding challenges and contributing to open source
 
 ---
@@ -14,7 +14,7 @@ I enjoy building full-stack web applications using PHP, MySQL, JavaScript, HTML,
 ## My Portfolio
 
 Check out my portfolio to see my projects and skills:  
-👉 [https://vasicut.github.io/vasicut/]
+👉 [https://vasicut.github.io/vasicut/](https://vasicut.github.io/vasicut/)
 
 ---
 
