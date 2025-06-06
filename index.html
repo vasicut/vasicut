@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Portfolio of Vasile-Sorin Nistor - Projects, Skills, Contact" />
+<title>Vasile-Sorin Nistor Portfolio</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #121212;
+    color: #e0e0e0;
+    line-height: 1.7;
+  }
+  a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #81d4fa;
+    outline: none;
+  }
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding-bottom: 3rem;
+  }
+  /* Header and Nav */
+  header {
+    background: #0d47a1;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.8);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1.2px;
+  }
+  nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    margin: 0 1.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  nav a.active,
+  nav a:hover {
+    border-bottom: 2px solid #4fc3f7;
+    padding-bottom: 4px;
+  }
+  /* Sections */
+  section {
+    background: #1e1e1e;
+    margin-bottom: 3rem;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+  }
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.9);
+  }
+  h2 {
+    border-bottom: 3px solid #4fc3f7;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  /* About */
+  #about p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  /* Skills */
+  #skills ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  #skills li {
+    background: #1976d2;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(25, 118, 210, 0.6);
+    user-select: none;
+    cursor: default;
+    transition: background 0.3s ease;
+  }
+  #skills li:hover {
+    background: #4fc3f7;
+    box-shadow: 0 6px 10px rgba(79, 195, 247, 0.9);
+  }
+  /* Projects */
+  #projects .project {
+    margin-bottom: 2rem;
+  }
+  #projects .project h3 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #81d4fa;
+  }
+  #projects .project p {
+    margin: 0 0 0.7rem 0;
+    line-height: 1.5;
+    font-size: 1.05rem;
+  }
+  #projects .project a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4fc3f7;
+    border-bottom: 1.5px solid transparent;
+    transition: border-bottom 0.3s ease;
+  }
+  #projects .project a:hover {
+    border-bottom: 1.5px solid #81d4fa;
+  }
+  /* Extra note below projects */
+  #more-projects {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    color: #aaa;
+  }
+  #more-projects a {
+    color: #4fc3f7;
+    font-weight: 600;
+  }
+  #more-projects a:hover {
+    color: #81d4fa;
+  }
+  /* Contact */
+  #contact p {
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  #contact a {
+    font-weight: 600;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #2c2c2c;
+    letter-spacing: 0.6px;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav a {
+      margin: 0 0.5rem;
+      display: inline-block;
+      padding: 0.3rem 0;
+      font-size: 1rem;
+    }
+    #skills ul {
+      justify-content: center;
+    }
+    section {
+      padding: 1.5rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vasile-Sorin Nistor</h1>
+  <nav>
+    <a href="#about" class="active">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="container" role="main">
+
+  <section id="about" tabindex="0">
+    <h2>About Me</h2>
+    <p>Hello! I’m Vasile-Sorin Nistor, a passionate developer with experience in web development. I recently graduated with a degree in Computer Science and enjoy building web applications and solving problems with clean, efficient code.</p>
+  </section>
+
+  <section id="projects" tabindex="0">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Seabrock Event Management Website</h3>
+      <p>A PHP & MySQL web app for managing events. Users can register, log in, and perform full CRUD operations on events. Features include event search, detailed pages, and user authentication for a smooth experience.</p>
+      <p><strong>Tech:</strong> PHP, MySQL, HTML, CSS</p>
+      <a href="https://github.com/vasicut/Seabrock" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Smart Inventory Management System</h3>
+      <p>A full-stack web app for managing products and inventory with user login, CRUD operations, and statistics.</p>
+      <p><strong>Tech:</strong> PHP, MySQL, HTML, CSS, JavaScript</p>
+      <a href="https://github.com/vasicut/Smart-Inventory-Management-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Delish Restaurant Website</h3>
+      <p>A multi-page restaurant website featuring responsive design, online reservation system, menu display, and contact form with PHP & MySQL backend.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+      <a href="https://github.com/vasicut/Delish" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+
+    <p id="more-projects">
+      You can see more projects and contributions on my
+      <a href="https://github.com/vasicut" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
+    </p>
+  </section>
+
+  <section id="skills" tabindex="0">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Git</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <section id="contact" tabindex="0">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vasi.sorin_nistor@yahoo.com">vasi.sorin_nistor@yahoo.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vasile-sorin-nistor-447b7a32a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/vasile-sorin-nistor-447b7a32a</a></p>
+    <p>GitHub: <a href="https://github.com/vasicut" target="_blank" rel="noopener noreferrer">github.com/vasicut</a></p>
+    <p><a href="files/Vasile-Sorin-Nistor-CV.pdf" target="_blank" rel="noopener noreferrer" download>Download My CV (PDF)</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 Vasile-Sorin Nistor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
